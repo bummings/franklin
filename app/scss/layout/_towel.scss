@@ -1,0 +1,13 @@
+.towel {
+  display: flex;
+  justify-content: center;
+
+  background-color: $color-offblack;
+  height: 60vh;
+
+  background-image: url('../../img/towelbw.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

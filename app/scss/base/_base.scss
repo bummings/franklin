@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 10px;
+  font-family: $font-primary !important;
+}
+
+body {
+  background-color: $color-offwhite;
+
+
+  @include respond(tab-land) {
+    border: 3px solid blue;
+  }
+  
+  @include respond(tab-port) {
+    border: 3px solid red;
+  }
+
+  @include respond(phone) {
+    border: 3px solid yellow;
+  }
+
+}
+
+a {
+  color: $color-offblack;
+  text-decoration: none;
+}
+
+
+
+h1 {
+  font-size: 4rem !important;
+  font-family: $font-primary;
+  line-height: 2;
+}
+
+h2 {
+  font-size: 3.5rem !important;
+  font-family: $font-primary;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.2rem !important;
+  font-family: $font-primary;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.8rem !important;
+  font-family: $font-primary;
+}
+
+h5 {
+  font-size: 1.5rem !important;
+  font-family: $font-primary;
+}
+
+// h1
+// h2 40px
+// h3 20px
+// h4 
+// h5 15px
+
+
+
+
+// .top {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   // z-index: -1;
+// }

@@ -1,0 +1,12 @@
+.test {
+  height: 60vh; //get rid of this bruh
+  display: flex;
+  align-items: center;
+}
+
+.skel-item {
+  border: 3px solid gray;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 3rem;
+  text-align: center;
+}

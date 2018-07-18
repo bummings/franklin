@@ -1,0 +1,10 @@
+.hero {
+  height: 110vh;
+  
+  &__photo {
+    height: 700px;
+    width: 1090px;
+    display: block;
+    margin: 0 auto;
+  }
+}

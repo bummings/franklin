@@ -1,0 +1,90 @@
+.nav {
+ 
+  &__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+
+
+  &--item {
+    font-family: $font-primary;
+    font-size: 2rem;
+    line-height: 2;
+    color: $color-offblack;
+    margin: 0 2.5rem;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-align: center;
+
+      &--book {
+        font-weight: 800;
+        font-family: $font-primary;
+        font-size: 2rem;
+        line-height: 2;
+        color: $color-offblack;
+        font-weight: 700;
+        margin: 0 3rem;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 800;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+.fixed {
+  background-color: rgba(223, 223, 223, .9);
+  color: $color-offwhite;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 100;
+  list-style: none;
+  font-family: $font-primary;
+  font-size: 1.7rem;
+  line-height: 2;
+  color: $color-offblack;
+  font-weight: 700; // margin: 0 3rem;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.burger-nav {
+  display: none;
+  @include respond(phone) {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url('../../img/burger.png') no-repeat 98%;
+    background-position: center;
+    background-color: lightblue;
+    cursor: pointer;
+    z-index: 300;
+  }
+}
+
+.open {
+  height: auto;
+}
+
+.red {
+  background-color: red;
+}
+

@@ -1,0 +1,11 @@
+.barbers {
+  
+  display: flex;
+  background-color: $color-offwhite;
+  justify-content: center;
+  
+  &__individual {
+    width: 24vw;
+    filter: grayscale(1);
+  }
+}

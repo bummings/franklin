@@ -1,0 +1,118 @@
+.headline {
+  padding-left: 12rem;
+  padding-right: 12rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  border-top: 1.5rem solid $color-offblack;
+
+  display: grid;
+  grid-template-columns: 8 / 1fr;
+  grid-template-rows: 2 / 1fr;
+  grid-gap: 1rem;
+  // align-content: center;
+  justify-content: center;
+
+
+  &__hours {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    // font-size: 2rem;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    line-height: 1.8;
+
+    color: $color-offblack;
+  
+    
+    
+
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+      color: blue;
+    }
+    
+    @include respond(tab-port) {
+      font-size: 1.1rem;
+      color: red;
+    }
+
+    @include respond(phone) {
+      font-size: .9rem;
+      color: yellow;
+    }
+  }
+
+  &__logo {
+    max-height: 50%;
+    max-width: 50%;
+    grid-row: 1 / span 1;
+    grid-column: 3 / 6;
+    justify-self: center;
+    align-self: start;
+
+    animation-name: fade;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+  }
+
+  &__address {
+    grid-row: 1 / span 1;
+    grid-column: 6 / 8;
+    font-size: 2rem;
+    color: $color-offblack;
+    line-height: 1.8;
+
+    letter-spacing: 1.5px;
+    font-weight: 100;
+
+    margin-bottom: 4rem;
+
+    &--map {
+      
+      &:hover {
+        background-color: $color-seafoam;
+      }
+
+      &--text {
+        margin-top: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: $color-offblack;
+        background-color: rgba(18, 18, 18, .2);
+      }
+    }
+    
+    
+
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+      color: blue;
+    }
+    @include respond(tab-port) {
+      font-size: 1.1rem;
+      color: red;
+    }
+    @include respond(phone) {
+      font-size: .9rem;
+      color: yellow;
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  100% {
+   opacity: 1;
+   transform: scale(1);
+  }
+}

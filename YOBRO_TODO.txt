@@ -1,0 +1,23 @@
+
+
+
+heavier font weight on book an appointment- just add a class, don't separate it   ✔
+
+add animations back in
+
+those contact captions are ready to go, just figure out the grid! ✔
+
+grid the footer, this is almost there, just figure out your rows ✔
+
+
+FUTURA he sez ✔
+
+Change the about section bg to white ✔
+
+Cuz wants a shop section for dat shirt
+
+grab that favicon
+
+parallax the top hero splash img so that white cascades over all slick
+
+go back to jonas for those clip paths bruh ✔ 
