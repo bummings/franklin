@@ -5,9 +5,11 @@
   grid-gap: 8rem;
   align-content: center;
 
+
+  // box-shadow: 3px 3px 3px black;
+
   height: 100%;
   padding: 4rem 12rem;
-  background-color: $color-offwhite;
 
   @include respond(phone) {
     padding: 1rem;
@@ -16,6 +18,8 @@
   // border: 5px solid yellow;
 
   &__image {
+    // float: left;
+    // margin: 2rem;   IF YA WANNA WRAP TXT
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
 

@@ -1,0 +1,62 @@
+.headlineMobile {
+  
+  border-top: 1.5rem solid $color-offblack;
+
+  display: grid;
+  grid-template-columns: 3 / 1fr;
+  grid-template-rows: 1 / 1fr;
+  grid-gap: 1rem;
+
+
+  // @include respond(tab-port) {
+  //     display: none;
+  //   }
+
+  // @include respond(tab-land) {
+  //   display: none;
+  // }
+
+  // @include respond(laptop) {
+  //   display: none;
+  // }
+
+  &__logo {
+    
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+
+    animation-name: fade;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+  }
+
+  &__burger {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    align-self: center;
+    justify-self: right;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+
+  &__menu {
+    font-family: $font-primary;
+    // display: none;
+    border: 2px solid red;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  100% {
+   opacity: 1;
+   transform: scale(1);
+  }
+}

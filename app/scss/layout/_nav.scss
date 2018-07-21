@@ -8,6 +8,7 @@
   width: 100%;
   overflow: hidden;
   list-style: none;
+  margin-bottom: 1.5rem; 
 
 
   &--item {
@@ -23,6 +24,11 @@
     font-weight: 100;
     text-align: center;
 
+    &:hover {
+      border-top: 8px solid $color-offblack;
+      border-bottom: 8px solid $color-offblack;
+    }
+
       &--book {
         font-weight: 800;
         font-family: $font-primary;
@@ -37,6 +43,11 @@
         letter-spacing: 4px;
         font-weight: 800;
         text-align: center;
+
+        &:hover {
+          border-top: 8px solid $color-offblack;
+          border-bottom: 8px solid $color-offblack;
+        }
       }
     }
   }
@@ -57,31 +68,13 @@
   font-size: 1.7rem;
   line-height: 2;
   color: $color-offblack;
-  font-weight: 700; // margin: 0 3rem;
+  font-weight: 700;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 800;
   text-align: center;
-}
-
-.burger-nav {
-  display: none;
-  @include respond(phone) {
-    display: block;
-    height: 40px;
-    width: 40px;
-    background: url('../../img/burger.png') no-repeat 98%;
-    background-position: center;
-    background-color: lightblue;
-    cursor: pointer;
-    z-index: 300;
-  }
-}
-
-.open {
-  height: auto;
 }
 
 .red {
