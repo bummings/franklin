@@ -3,19 +3,29 @@
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
 	grid-gap: 4rem;
-	background-image: url(../../img/combblur.jpg);
-	background-size: cover;
-	background-position: center;
-  background-repeat: no-repeat;
-	padding: 12rem;
+	align-content: center;
+	
+	background-color: $color-offblack;
+	padding: 30rem 0 12rem 0;
+
+	@include respond(tab-land) {
+		padding: 7rem;
+	}
+
+	@include respond(tab-port) {
+		padding: 2rem;
+	}
+
 
 	@include respond(phone) {
-		padding: 1rem;
-		padding-top: 10rem;
+		grid-template-columns: 1fr;
+		padding: 10rem 8rem 5rem 8rem;
+		// padding-top: 10rem;
 	}
 
 	&__form {
 		margin-bottom: 3px;
+		padding-left: 10rem;
 
 		grid-column: 1 / span 1;
 		grid-row: 1 / span 1;
@@ -28,28 +38,37 @@
 	}
 
 	&__info {
-		background-color: rgba(43, 43, 43, .6);
-		border: 1px solid $color-offwhite;
+		// background-image: url(../../img/silo2.jpg);
+		// background-size: cover;
+		// background-position: center;
+  	// background-repeat: no-repeat;
 		padding: 2rem;
-		align-self: center;
 
 		grid-column: 2 / span 1;
 		grid-row: 1 / span 1;
 
+
 		@include respond(phone) {
 			grid-column: 1 / span 1;
 			grid-row: 1 / span 1;
-
-			justify-self: center;
 		}
 
 		&--text{
 			font-family: $font-secondary;
 			font-size: 2.4rem;
 			color: $color-offwhite;
+			padding-right: 6rem;
+
+			@include respond(tab-land) {
+				font-size: 2.1rem;
+			}
+
+			@include respond(tab-port) {
+				font-size: 2rem
+			}
 
 			@include respond(phone) {
-				font-size: 1.8rem;
+				font-size: 2rem;
 			}
 
 			&--link {
@@ -60,6 +79,13 @@
 				@include respond(phone) {
 					font-size: 1.8rem;
 				}
+			}
+
+			&--bold {
+			font-family: $font-secondary;
+			font-size: 2.4rem;
+			color: $color-offwhite;
+			font-style: italic;
 			}
 		}
 	}
@@ -72,12 +98,13 @@
 		width: 30rem;
 		border: 1px solid $color-offwhite;
 		margin-bottom: 2rem;
+		padding-left: 1rem;
 
 		&--description {
 			font-size: 2rem;
 			font-family: $font-secondary;
 			color: $color-offwhite;
-			background-color: rgba(43, 43, 43, .6);
+			background-color: rgba(43, 43, 43, 1);
 			padding: .5rem;
 		}
 
@@ -85,9 +112,9 @@
 			margin: 2rem;
 			background-color: $color-offblack;
 			color: $color-offwhite;
-			font-size: 1.2rem;
-			height: 4rem;
-			width: 8rem;
+			font-size: 1.4rem;
+			height: 6rem;
+			width: 10rem;
 			border-radius: 1.5rem;
 			border: 3px solid $color-offwhite;
 
@@ -102,75 +129,10 @@
 	&__message {
 		background-color: rgba(43, 43, 43, .6);
 		color: $color-offwhite;
-		font-size: 3.2rem;
+		font-size: 2.2rem;
 		border: 1px solid $color-offwhite;
 		padding: 1rem;
 		height: 12rem;
 		width: 30rem;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-// .contact {
-// 	display: flex;
-// 	align-items: center;
-// 	padding: 10rem 1rem;
-// 	background-color: $color-offblack;
-// 	height: 80vh;
-// 	font-family: $font-primary;
-// 	background-image: url('../../img/combblur.jpg');
-// 	background-attachment: fixed;
-// 	background-position: center;
-// 	background-repeat: no-reap;
-// 	background-size: cover;
-
-
-// 	&__text{
-// 		background-color: rgba(223, 223, 223, .5);
-// 		border: 3px solid $color-offblack;
-// 		padding: 4rem;
-
-// 		&--header {
-// 			text-transform: uppercase;
-// 		}
-
-// 		&--sub {
-// 			font-size: 2rem;
-// 			text-transform: none;
-// 			//h3
-// 		}
-// 	}
-// }
-
-// .input {
-// 	background-color: red;
-// }
-
-// .button-primary {
-// 	-webkit-border-radius: 28;
-// 	-moz-border-radius: 28;
-// 	border-radius: 28px;
-// 	font-family: $font-secondary !important;
-// 	color: #2b2b2b !important;
-// 	font-size: 15px !important;
-// 	background: #dfdfdf !important;
-// 	padding: 10px 12px 10px 12px;
-// 	border: solid #2b2b2b 4px !important;
-// 	text-decoration: none !important;
-// 	text-transform: none !important;
-// }
-
-// .button-primary:hover {
-// 	background: #2b2b2b !important;
-// 	color: #dfdfdf !important;
-// 	text-decoration: none;
-// }

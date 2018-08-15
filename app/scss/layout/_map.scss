@@ -1,5 +1,13 @@
 .map {
+  display: flex;
+  justify-content: center;
   height: 100%;
-  padding: 0;
-  margin: 0;
+  // margin: 0 0 10rem 0;
+  // border: 3px solid red;
+  background-color: #333333;
+
+  &__filler {
+    width: 100%;
+  }
 }
+

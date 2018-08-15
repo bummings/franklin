@@ -12,11 +12,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Cardo|Nunito+Sans:300,400,800" rel="stylesheet">
 
-  <!-- <link rel="stylesheet" href="https://www.skeletonframeworktemplate.com/cdn/skeleton-css-cdn.css
-  "> -->
 
 
-  <title>former</title>
+  <title>Franklin's Barber Shop</title>
 </head>
 
 <body>
@@ -28,7 +26,6 @@
       <br/>Sat 10a-6p
       <br/>Closed Sunday
       <br/>
-      <button class="redButton">red</button>
     </h3>
 
     <img class='headline__logo' src="img/logo-trans.png" alt="Franklin's Barber Shop">
@@ -46,37 +43,65 @@
   </section>
 
 
+<!----------------------------------------->
+
+  <section class="headlineMobile">
+    <img class='headlineMobile__logo' src="img/franklin-mobile.png" alt="Franklin's Barber Shop">
+    <img id='burger' class="headlineMobile__burger" src="img/burger.png">
+
+    <div class="headlineMobile__menu hidden">
+      <li>
+        <a href="#about" class="headline__menu">about</a>
+      </li>
+      <li>
+        <a href="#services" class="headline__menu">services</a>
+      </li>
+      <li>
+        <a href="#barbers" class="headline__menu">barbers</a>
+      </li>
+      <li>
+        <a href="#contact" class="headline__menu">contact</a>
+      </li>
+      <li>
+        <a href="#shop" class="headline__menu">shop</a>
+      </li>
+      <li>
+        <a href="#" class="headline__menu__book">book an appointment</a>
+      </li>
+      </ul>
+    </div>
+  </section>
 
 
-
+<!----------------------------------------->
 
 
 
   <section class="nav">
-  
+
     <ul class="nav__navbar">
-      
+
       <li>
-        <a href="#" class="nav__navbar--item">about</a>
+        <a href="#about" class="nav__navbar--item">about</a>
       </li>
 
       <li>
-        <a href="#" class="nav__navbar--item">services</a>
-      </li>
-
-
-      <li>
-        <a href="#" class="nav__navbar--item">barbers</a>
+        <a href="#services" class="nav__navbar--item">services</a>
       </li>
 
 
       <li>
-        <a href="#" class="nav__navbar--item">shop</a>
+        <a href="#barbers" class="nav__navbar--item">barbers</a>
       </li>
 
 
       <li>
-        <a href="#" class="nav__navbar--item">contact</a>
+        <a href="#contact" class="nav__navbar--item">contact</a>
+      </li>
+
+
+      <li>
+        <a href="#shop" class="nav__navbar--item">shop</a>
       </li>
 
 
@@ -84,11 +109,7 @@
         <a href="#" class="nav__navbar--item--book">book an appointment</a>
       </li>
 
-      <!-- <li>
-        <a href="#" class="nav__navbar--item">
-            <a class="burger-nav"></a>
-        </a>
-      </li> -->
+
 
     </ul>
 
@@ -113,7 +134,7 @@
 
 
 
-
+  <div id="about"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
   <section class="about">
 
     <div class=about__image>
@@ -123,8 +144,9 @@
 
     <div class=about__text>
       <h5 class="about__text--text">
-        Anthony “Sailor Tony” Reilly is the proprietor of Franklin's Barber Shop, located in the historic Fishtown neighborhood of Philadelphia. 
-        
+        Anthony “Sailor Tony” Reilly is the proprietor of Franklin's Barber Shop, located in the historic Fishtown neighborhood of
+        Philadelphia.
+
         <br>
         <br> A Philadelphia native, Sailor Tony travelled extensively to hone his craft before coming back to his hometown to
         put down roots and put into practice what he had learned in his travels.
@@ -156,88 +178,38 @@
 
 
 
-
-
-
-
-
+  <div id="services"></div>
   <section class="services">
 
 
-        <div class="1 serviceGridItem">
-          <h2 class="services__service">Haircut</h2>
-          <h2 class="services__price">$25</h2>
-          <h3 class="services__description">Includes a straight razor neck shave.</h3>
-          <h5 class="services__apprentice">$15 w/ apprentice.</h5> 
-        </div>
+    <div class="box1 serviceGridItem">
+      <h2 class="services__service">Haircut</h2>
+      <h2 class="services__price">$25</h2>
+      <h3 class="services__description">Includes a straight razor neck shave.</h3>
+      <h5 class="services__apprentice">$15 w/ apprentice.</h5>
+    </div>
 
-        <div class="2 serviceGridItem">
-          <h2 class="services__service">Beard Trim</h2>
-          <h2 class="services__price">$25</h2>
-          <h3 class="services__description">Hot towels and straight razor detail.</h3>
-          <h5 class="services__apprentice">$15 w/ apprentice.</h5>
-        </div>
+    <div class="box2 serviceGridItem">
+      <h2 class="services__service">Beard Trim</h2>
+      <h2 class="services__price">$25</h2>
+      <h3 class="services__description">Hot towels and straight razor detail.</h3>
+      <h5 class="services__apprentice">$15 w/ apprentice.</h5>
+    </div>
 
-        <div class="3 serviceGridItem">
-          <h2 class="services__service">Hot Towel Shave</h2>
-          <h2 class="services__price">$25</h2>
-          <h3 class="services__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, facere ipsa. Minima.</h3>
-          <h5 class="services__apprentice">$15 w/ apprentice.</h5>
-        </div>
+    <div class="box3 serviceGridItem">
+      <h2 class="services__service">Hot Towel Shave</h2>
+      <h2 class="services__price">$25</h2>
+      <h3 class="services__description">Hot towels and straight razor detail.</h3>
+      <h5 class="services__apprentice">$15 w/ apprentice.</h5>
+    </div>
 
-        <div class="4 serviceGridItem">
-          <h2 class="services__service">Haircut & Hot Towel Shave
-            <br>or Beard Trim</h2>
-          <h2 class="services__price">$50</h2>
-          <h3 class="services__description">Full hour service.</h3>
-          <h5 class="services__apprentice">$25 w/ apprentice.</h5>
-        </div>
-
-  </section>
-
-
-
-  
-
-
-  <section class="contact">
-
-    <div class="container">
-      <div class="row">
-        <div class="six columns">
-          <form>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-          </form>
-        </div>
-
-
-
-
-
-
-
-        <div class="six columns contact__text">
-          <h2 class="contact__text--header">Contact Us</h2>
-          <h3 class="contact__text--sub">In order to provide the best possible service, we do not have a shop telephone. You can contact us through this
-            form. </h3>
-        </div>
-      </div>
+    <div class="box4 serviceGridItem">
+      <h2 class="services__service">Haircut & Hot Towel Shave
+        <br>or Beard Trim</h2>
+      <h2 class="services__price">$50</h2>
+      <h3 class="services__description">Full hour service.</h3>
+      <h5 class="services__apprentice">$25 w/ apprentice.</h5>
+    </div>
 
   </section>
 
@@ -245,34 +217,149 @@
 
 
 
-
-
-
-
-
-
+  <div id="barbers"></div>
   <section class="barbers">
 
 
-    <img class='barbers__individual' src="img/tony-small.jpg" alt="Tony">
+    <img class='barbers__individual barbers__individual--1' src="img/tony-small.jpg" alt="Tony">
 
-    <img class='barbers__individual' src="img/john-small.jpg" alt="John">
+    <img class='barbers__individual barbers__individual--2' src="img/john-small.jpg" alt="John">
 
-    <img class='barbers__individual' src="img/vincent-small.jpg" alt="Vincent">
+    <img class='barbers__individual barbers__individual--3' src="img/vincent-small.jpg" alt="Vincent">
 
-    <img class='barbers__individual' src="img/jay.jpg" alt="Jay">
+    <img class='barbers__individual barbers__individual--4' src="img/jay-small.jpg" alt="Jay">
 
 
   </section>
 
 
-  <section class="map">
-    <iframe src="https://snazzymaps.com/embed/84787" width="100%" height="400px" style="border:none;"></iframe>
+
+
+
+
+
+
+  <div id="contact"></div>
+  <section class="contact">
+    <div class="contact__form">
+      <form>
+        <div>
+          <label>
+            <span class="contact__input--description">Your name</span>
+            <br>
+            <input class="contact__input" id="name" type="text" name="name" />
+          </label>
+          <p/>
+          <label>
+            <span class="contact__input--description">E-mail Address</span>
+            <br>
+            <input class="contact__input" id="email" type="text" name="email" />
+          </label>
+          <p/>
+          <label>
+            <span class="contact__input--description">Subject</span>
+            <br>
+            <input class="contact__input" id="subject" type="text" name="subject" />
+          </label>
+          <p/>
+          <label>
+            <span class="contact__input--description">Message</span>
+            <br>
+            <input class="contact__message" id="feedback" name="feedback" />
+            <input class="contact__input--button" type="button" value="Submit" />
+          </label>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact__info">
+      <p class="contact__info--text">In order to provide the best possible service, we do not have a shop telephone. You can contact us with any questions
+        with this form.
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <span class="contact__info--text--bold">To make an appointment, click
+          <a class="contact__info--text--link" href="#">here</a>.</span>
+      </p>
+    </div>
+    </div>
+
+  </section>
+
+
+
+
+  <section class="mirror">
+
+  </section>
+
+
+
+
+
+  <div id="shop"></div>
+  <section class="shop">
+
+    <div class="shop__shirt">
+      <img class="bw" src="img/shirt-small.jpg" alt="">
+    </div>
+
+    <div class="shop__text">
+      <p class="shop__text--headline">Franklins Shop Tee</p>
+      <p class="shop__text--price">$15</p>
+
+      <p class="shop__text--description">Dark blue front print on white Gildan Heavy Cotton Tee. Regular fit.</p>
+
+<!-- no form------------------->
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p class="shop__text--size">S / M / L / XL</p>
+    </div>
+
+    <!-- <div class="shop__form--size">
+        <label class="shop__form--size--label">Select size</label>
+        <select class="shop__form--size--select">
+          <option class="shop__form--option" value = "S">S</option>
+          <option class="shop__form--option" value = "M">M</option>
+          <option class="shop__form--option" value = "L">L</option>
+          <option class="shop__form--option" value = "XL">XL</option>
+        </select>
+    </div>
+      
+
+    <div class="shop__form--quantity">
+      <span class="shop__form--quantity--label">Quantity</span>
+      <input class="shop__form--quantity--input" placeholder="1" />
+    </div>
+
+    <div class="shop__form--button">
+        <input class="shop__form--button--btn" type="button" value="Buy" />
+    </div> -->
+
+
+  </section>
+
+
+  <section class="map"> <!-- 1 0 0 p e r c e n t m a p b r u h -->
+
+      <!-- <iframe src="https://snazzymaps.com/embed/87045" width="80%" height="300px" style="border:none;"></iframe> -->
+
+      <!-- MAP FILLER, BRUH -->
+      <img class='map__filler' src="img/mapfiller.png">
+
   </section>
 
 
 
   <section class="footer">
+
+    <div class="footer__address">
+      <p class="footer__address--text">
+        225 E. Girard Ave.
+        <br/>Phila, PA 19122
+      </p>
+    </div>
 
     <div class="footer__social">
       <img class=footer__social--icon src="img/facebook.png" alt="facebook">
@@ -282,7 +369,7 @@
       <img class=footer__social--icon src="img/yelp.png" alt="Yelp">
     </div>
 
-    <img class=footer__logo src="img/logo-trans-white.png" alt="logo"> 
+    <!-- <img class=footer__logo src="img/lookwell-black.png" alt="logo"> -->
 
 
   </section>

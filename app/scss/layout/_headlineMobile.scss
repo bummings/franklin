@@ -2,23 +2,10 @@
   
   border-top: 1.5rem solid $color-offblack;
 
-  display: grid;
+  display: inline-block;
   grid-template-columns: 3 / 1fr;
   grid-template-rows: 1 / 1fr;
   grid-gap: 1rem;
-
-
-  // @include respond(tab-port) {
-  //     display: none;
-  //   }
-
-  // @include respond(tab-land) {
-  //   display: none;
-  // }
-
-  // @include respond(laptop) {
-  //   display: none;
-  // }
 
   &__logo {
     
@@ -44,8 +31,32 @@
 
   &__menu {
     font-family: $font-primary;
-    // display: none;
-    border: 2px solid red;
+    font-size: 2rem;
+    line-height: 2;
+    color: $color-offblack;
+    margin: 0 2.5rem;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-align: center;
+    list-style: none;
+  }
+
+  &__book {
+    font-family: $font-primary;
+    font-size: 2rem;
+    line-height: 2;
+    color: $color-offblack;
+    margin: 0 2.5rem;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-align: center;
+    list-style: none;
   }
 }
 
@@ -60,3 +71,4 @@
    transform: scale(1);
   }
 }
+

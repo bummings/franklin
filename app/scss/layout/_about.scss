@@ -4,18 +4,12 @@
   grid-template-rows: 2 / 1fr;
   grid-gap: 8rem;
   align-content: center;
-
-
-  // box-shadow: 3px 3px 3px black;
-
   height: 100%;
   padding: 4rem 12rem;
 
   @include respond(phone) {
     padding: 1rem;
   }
-
-  // border: 5px solid yellow;
 
   &__image {
     // float: left;
@@ -41,7 +35,11 @@
         @include respond(tab-port) {
           height: 315px;
           width: 300px;
-        }     
+        }  
+        
+        @include respond(phone) {
+          padding-top: 4rem;
+        }
       }
     }
 

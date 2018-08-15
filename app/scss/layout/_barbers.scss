@@ -1,39 +1,37 @@
 .barbers {
   
   display: grid;
-  grid-template-columns: 4;
-  grid-template-rows: 1;
+  grid-auto-columns: 4;
+  grid-auto-rows: 1;
   justify-content: center;
+
+  background-color: $color-offwhite;
+  
+  margin: 25rem 0 0 0;
 
 
   &__individual {
-    
+    filter: grayscale(100%);
+    width: 100%;
+
+    // &:hover {
+    //   filter: grayscale(0);
+    // }
+
     &--1 {
       grid-column: 1 / span 1;
-      height: 363px;
-      width: 242px;
-      width: 100%;
     }
 
     &--2 {
       grid-column: 2 / span 1;
-      height: 363px;
-      width: 242px;
-      width: 100%;
     }
 
     &--3 {
       grid-column: 3 / span 1;
-      height: 363px;
-      width: 242px;
-      width: 100%;
     }
 
     &--4 {
       grid-column: 4 / span 1;
-      height: 363px;
-      width: 242px;
-      width: 100%;
     }
   }
 
