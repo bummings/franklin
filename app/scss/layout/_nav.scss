@@ -1,5 +1,4 @@
 .nav {
- 
   &__navbar {
   display: flex;
   flex-direction: row;
@@ -9,6 +8,14 @@
   overflow: hidden;
   list-style: none;
   margin-bottom: 1.5rem; 
+
+  @include respond(tab-land) {
+    justify-content: space-around;
+  }
+
+  @include respond(tab-port) {
+    justify-content: space-around;
+  }
 
 
   &--item {
@@ -30,6 +37,16 @@
       border-bottom: 8px solid $color-offblack;
     }
 
+    @include respond (tab-land) {
+      font-size: 1.6rem;
+      margin: 1.6rem;
+    }
+
+    @include respond (tab-port) {
+      font-size: 1.2rem;
+      margin: .5rem;
+    }
+
       &--book {
         font-weight: 800;
         font-family: $font-primary;
@@ -49,6 +66,16 @@
           border-top: 8px solid $color-offblack;
           border-bottom: 8px solid $color-offblack;
         }
+
+        @include respond (tab-land) {
+          font-size: 1.6rem;
+          margin: 1.6rem;
+        }
+    
+        @include respond (tab-port) {
+          font-size: 1.2rem;
+          margin: .5rem;
+        }
       }
     }
   }
@@ -63,7 +90,7 @@
   top: 0px;
   right: 0px;
   left: 0px;
-  z-index: 100;
+  z-index: 671195392468259538421913;
   list-style: none;
   font-family: $font-primary;
   font-size: 1.7rem;

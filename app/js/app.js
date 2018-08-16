@@ -5,10 +5,10 @@ var hideButton = document.querySelector('.hideButton');
 
 var burger = document.getElementById('burger');
 
-burger.addEventListener('click', function () {
-  //now display a motherfuckin menu you idiot
-  headlineMobile.classList.toggle('hidden');
-});
+// burger.addEventListener('click', function () {
+//   //now display a motherfuckin menu you idiot
+//   headlineMobile.classList.toggle('hidden');
+// });
 
 
 $(document).ready(function () {

@@ -1,14 +1,14 @@
 .headline {
   padding-left: 12rem;
   padding-right: 12rem;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  // padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-bottom: 4rem;
-  border-top: 1.5rem solid $color-offblack;
+  border-top: 1.8rem solid $color-offblack;
 
   display: grid;
   grid-template-columns: 9 / 1fr;
-  grid-template-rows: 2 / 1fr;
+  grid-template-rows: 3 / 1fr;
   grid-gap: 1rem;
 
 
@@ -18,14 +18,17 @@
   }
 
   @include respond(tab-port) {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   &__hours {
     grid-row: 1 / span 1;
     grid-column: 1 / span 2;
-    
+
+    font-size: 1.8rem !important;
+    font-family: $font-primary;
+    line-height: 1.2;
     letter-spacing: 1.5px;
     font-weight: 100;
     line-height: 1.8;
@@ -34,23 +37,22 @@
 
     @include respond(tab-land) {
       font-family: $font-primary;
-      font-size: 1.8rem;
-      color: blue;
+      font-size: 1.55rem !important;
     }
     
     @include respond(tab-port) {
-      font-size: 1.1rem;
-      color: red;
+      font-size: 1.4rem !important;
     }
   }
 
   &__logo {
     height: 174px;
     width: 374px;
-    grid-row: 1 / span 1;
+
+    grid-row: 1 / span 2;
     grid-column: 3 / 6;
     justify-self: center;
-    align-self: start;
+    align-self: center;
 
     animation-name: fade;
     animation-duration: 1.3s;
@@ -63,50 +65,72 @@
       height: 125px;
       width: 267.5px;
     }
-  }
 
+    @include respond (tab-port) {
+      height: 100px;
+      width: 214px;
+      align-self: start;
+    }
+  }
+  
   &__address {
     grid-row: 1 / span 1;
     grid-column: 6 / 8;
-    font-size: 2rem;
-    color: $color-offblack;
-    line-height: 1.8;
+
+    font-size: 1.8rem !important;
+    font-family: $font-primary;
+    line-height: 1.2;
     letter-spacing: 1.5px;
     font-weight: 100;
-    margin-bottom: 4rem;
+    line-height: 1.8;
+    color: $color-offblack;
     text-align: right;
-
     
     @include respond(tab-land) {
       font-family: $font-primary;
-      font-size: 1.8rem;
-      color: blue;
+      font-size: 1.55rem !important;
     }
     
     @include respond(tab-port) {
-      font-size: 1.1rem;
-      color: red;
+      font-size: 1.4rem !important;
     }
 
-    &--map {
-      
-      &:hover {
-        background-color: $color-seafoam;
-      }
+    &--map {      
+      grid-column: 7 / 8;
+      grid-row: 2 / 3;
 
       &--text {
+        font-size: 1.5rem;
+        font-family: $font-primary;
+        line-height: 1.2;
+        line-height: 1.8;
+        color: $color-offblack;
+
         margin-top: 1rem;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 4px;
         font-weight: 800;
         font-size: 1.5rem;
-        color: $color-offblack;
         background-color: rgba(18, 18, 18, .2);
+
+        &:hover {
+          background-color: $color-seafoam;
+        }
+  
+        @include respond(tab-land) {
+          font-size: 1.2rem;
+        }
+
+        @include respond(tab-port) {
+          font-size: 1rem;
+        }
       }
-    }
+    }    
   }
 }
+
+
 
 @keyframes fade {
   0% {
