@@ -33,8 +33,9 @@
     list-style: none;
 
     &:hover {
-      border-top: 8px solid $color-offblack;
-      border-bottom: 8px solid $color-offblack;
+    //   border-top: 8px solid $color-offblack;
+    //   border-bottom: 8px solid $color-offblack;
+    color: darkgrey;
     }
 
     @include respond (tab-land) {
@@ -63,8 +64,9 @@
         text-align: center;
 
         &:hover {
-          border-top: 8px solid $color-offblack;
-          border-bottom: 8px solid $color-offblack;
+        //   border-top: 8px solid $color-offblack;
+        //   border-bottom: 8px solid $color-offblack;
+        color: darkgrey;
         }
 
         @include respond (tab-land) {

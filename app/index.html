@@ -8,18 +8,17 @@
 
   <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'>
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/styles.css">
 
   <link href="https://fonts.googleapis.com/css?family=Cardo|Nunito+Sans:300,400,800" rel="stylesheet">
 
   <title>Franklin's Barber Shop</title>
 </head>
-
-
 <body>
-
+        
   <section class="headline">
-
     <p class='headline__hours'>
       Mon-Fri 12p-8p
       <br/>Sat 10a-6p
@@ -27,22 +26,20 @@
       <br/>
     </p>
 
-
     <img class='headline__logo' src="img/logo-trans.png" alt="Franklin's Barber Shop">
 
     
     <p class='headline__address'>
       225 E. Girard Ave.
-      <br/>Phila, PA 19122
+      <br/>Phila, PA 19125
     </p>
 
-      <div class="headline__address--map">
-        <a href="https://www.google.com/maps/place/225+E+Girard+Ave,+Philadelphia,+PA+19125/@39.9695176,-75.1336388,19z/data=!3m1!4b1!4m5!3m4!1s0x89c6c86991af5cbf:0xfc14f4829ac5b186!8m2!3d39.9695176!4d-75.1330916">
+      <!-- <div class="headline__address--map">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/225+E+Girard+Ave,+Philadelphia,+PA+19125/@39.9695176,-75.1336388,19z/data=!3m1!4b1!4m5!3m4!1s0x89c6c86991af5cbf:0xfc14f4829ac5b186!8m2!3d39.9695176!4d-75.1330916">
           <p class='headline__address--map--text'>open in maps</p>
         </a>
-      </div>
+      </div> -->
   </section>
-
   <!----------- mobile nav ------------->
   <section class="headlineMobile">
       <img class='headlineMobile__logo' src="img/franklin-mobile.png" alt="Franklin's Barber Shop">
@@ -97,11 +94,11 @@
       </li>
 
       <li>
-        <a href="#shop" class="nav__navbar--item">shop</a>
+        <a href="#shop" class="nav__navbar--item">store</a>
       </li>
 
       <li>
-        <a href="#" class="nav__navbar--item--book">book an appointment</a>
+        <a href="https://franklinsbarbershop.resurva.com/book" class="nav__navbar--item--book">book an appointment</a>
       </li>
     </ul>
   </section>
@@ -130,7 +127,7 @@
   </div>
   <section class="about">
 
-    <div class=about__image>
+    <div class='about__image' data-aos="fade-right">
       <img class='about__image--image' src="img/tony-bw.jpg">
     </div>
 
@@ -175,28 +172,28 @@
   <section class="services">
 
 
-    <div class="box1 serviceGridItem">
+    <div class="box1 serviceGridItem" data-aos="flip-right">
       <h2 class="services__service services__service--spacer">Haircut</h2>
       <h2 class="services__price">$25</h2>
       <h3 class="services__description">Includes a straight razor neck shave.</h3>
       <h5 class="services__apprentice">$15 w/ apprentice.</h5>
     </div>
 
-    <div class="box2 serviceGridItem">
+    <div class="box2 serviceGridItem" data-aos="flip-left">
       <h2 class="services__service services__service--spacer">Beard Trim</h2>
       <h2 class="services__price">$25</h2>
       <h3 class="services__description">Hot towels and straight razor detail.</h3>
       <h5 class="services__apprentice">$15 w/ apprentice.</h5>
     </div>
 
-    <div class="box3 serviceGridItem">
+    <div class="box3 serviceGridItem" data-aos="flip-left">
       <h2 class="services__service services__service--spacer">Hot Towel Shave</h2>
       <h2 class="services__price">$25</h2>
       <h3 class="services__description">Hot towels and straight razor detail.</h3>
       <h5 class="services__apprentice">$15 w/ apprentice.</h5>
     </div>
 
-    <div class="box4 serviceGridItem">
+    <div class="box4 serviceGridItem" data-aos="flip-right">
       <h2 class="services__service">Haircut & Hot Towel Shave
         <br>or Beard Trim</h2>
       <h2 class="services__price">$50</h2>
@@ -293,7 +290,7 @@
   <div id="shop"></div>
   <section class="shop">
 
-    <div class="shop__shirt">
+    <div data-aos='zoom-in' class="shop__shirt">
       <img class="bw" src="img/shirt-small.jpg" alt="">
     </div>
 
@@ -334,41 +331,43 @@
   </section>
 
 
-  <section class="map"> <!-- 1 0 0 p e r c e n t m a p b r u h -->
+  <!-- <section class="map">  -->
+      <!-- 1 0 0 p e r c e n t m a p b r u h -->
 
-      <!-- <iframe src="https://snazzymaps.com/embed/87045" width="80%" height="300px" style="border:none;"></iframe> -->
+      <!-- <iframe src="https://snazzymaps.com/embed/87045" width="100%" height="400px" style="border:none;"></iframe> -->
 
       <!-- MAP FILLER, BRUH -->
-      <img class='map__filler' src="img/mapfiller.png">
+      <!-- <img class='map__filler' src="img/mapfiller.png">
 
-  </section>
-
+  </section> -->
+  
 
 
   <section class="footer">
 
-    <div class="footer__address">
-      <p class="footer__address--text">
-        225 E. Girard Ave.
-        <br/>Phila, PA 19122
+    <div class="footer__lookwell">
+      <img src="img/lookwell.png">
       </p>
     </div>
 
     <div class="footer__social">
       <!-- <img class=footer__social--icon src="img/facebook.png" alt="facebook"> -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+      
+      <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/franklinsbarbershopphilly/"><svg class='footer__social--svg' xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
 
       <!-- <img class=footer__social--icon src="img/instagram.png" alt="instagram"> -->
-      <svg class='footer__social--svg' xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/franklinsbarbershop/">
+      <svg class='footer__social--svg' xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
 
       <!-- <img class=footer__social--icon src="img/yelp.png" alt="Yelp"> -->
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 430.119 430.119" style="enable-background:new 0 0 430.119 430.119;" xml:space="preserve">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.yelp.com/biz/franklins-barber-shop-philadelphia">
+      <svg class='footer__social--svg' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 430.119 430.119" style="enable-background:new 0 0 430.119 430.119;" xml:space="preserve">
         <g>
           <path id="Yelp" d="M108.716,19.591c21.693-17.051,63.4-21.938,80.561-18.61c17.177,3.307,26.147,12.914,26.257,24.612l0.99,149.155   c0.077,11.714-6.004,22.481-13.525,23.931c-7.561,1.418-18.687-5.544-24.803-15.509L99.938,55.275   C93.868,45.297,81.633,40.896,108.716,19.591z M82.732,303.211l78.788-27.881c10.979-3.893,20.812-14.725,21.917-24.138   c1.066-9.409-6.915-20.582-17.74-24.866l-83.228-33.001c-10.833-4.282-23.331,5.873-26.628,22.49c0,0-1.979,57.867,0,69.848   C57.843,297.634,71.755,307.122,82.732,303.211z M220.164,317.143c0.231-11.747-6.04-21.879-13.936-22.603   c-7.899-0.733-20.439,6.007-27.928,14.953l-54.959,65.904c-7.484,8.956-3.766,29.99,7.141,33.972l57.468,19.961   c10.939,3.98,30.203-7.799,30.427-19.509L220.164,317.143z M356.781,301.802l-68.914-19.812   c-11.173-3.211-23.858-2.908-28.151,0.728c-4.299,3.594-3.234,14.954,2.395,25.207l43.492,79.598   c5.624,10.249,28.114,8.494,34.308-1.452c0,0,26.215-38.676,31.036-53.172C375.767,318.37,367.945,305.013,356.781,301.802z    M373.564,189.878c-3.104-10.069-24.651-39.756-36.319-49.875c-11.658-10.141-24.992-8.87-32.511,0.033l-44.412,52.906   c-7.523,8.902-9.535,23.022-4.518,31.325c5.013,8.303,18.388,13.007,29.738,10.459l76.82-14.244   C376.229,217.155,376.719,199.947,373.564,189.878z"/>
-        </svg>
+        </svg></a>
     </div>
 
-    <!-- <img class=footer__logo src="img/lookwell-black.png" alt="logo"> -->
+    <!-- <img class=footer__logo src="img/lookwell.png" alt="logo"> -->
 
 
   </section>
@@ -378,8 +377,21 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/nav.js"></script>
+  <script>
+       AOS.init({
+  duration: 1200,
+})
+      </script>
 
 </body>
 
 </html>
+
+
+
+<!-- // 19125
+// no bars
+// store
+//  -->
